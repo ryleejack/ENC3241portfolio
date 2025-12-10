@@ -1,0 +1,24 @@
+
+# Site settings
+title: Technical Communication Portfolio
+description: UCF-themed, forkable GitHub Pages template.
+baseurl: ""
+url: ""
+
+# Collections
+collections:
+  assignments:
+    output: true
+    permalink: /assignments/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: "_assignments"
+      type: assignments
+    values:
+      layout: default
+  - scope:
+      path: ""
+    values:
+      layout: default

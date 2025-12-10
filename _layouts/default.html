@@ -1,0 +1,26 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Primary">
+    <div class="wrap">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/schedule' | relative_url }}">Schedule</a>
+      <a href="{{ '/assignments/paragraph' | relative_url }}">Assignments</a>
+    </div>
+  </nav>
+  <main class="container">
+    {{ content }}
+  </main>
+  <footer class="container">
+    <small>UCF black & bright gold palette applied. Update branding in <code>assets/css/site.css</code>.</small>
+  </footer>
+</body>
+</html>
